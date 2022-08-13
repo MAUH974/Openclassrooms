@@ -1,0 +1,14 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Image original:</h1>
+      {% for row in contenu %}
+            <p style="padding-left:20px">- {{ row }}</p> 
+            <img src= {{ row }} width="256" height="256">
+      {% endfor %}
+      <h1>Image avec mask:</h1>
+      <img src= "./static/MASK.png" width="256" height="256">
+  </body>
+</html>
+
